@@ -1,3 +1,4 @@
 data "google_redis_instance" "instance" {
-  name = var.redis_instance
+  name   = var.redis_instance
+  region = var.region
 }

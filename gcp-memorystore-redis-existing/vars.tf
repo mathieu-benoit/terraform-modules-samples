@@ -5,6 +5,9 @@ variable "access_token" {
 variable "project_id" {
   type = string
 }
+variable "region" {
+  type = string
+}
 variable "redis_instance" {
   type = string
 }
