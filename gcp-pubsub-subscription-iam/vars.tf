@@ -11,9 +11,9 @@ variable "env_id" {
 variable "res_id" {
   type = string
 }
-variable "project_id" {
+variable "subscription_name" {
   type = string
 }
-variable "region" {
-  type = string
+variable "principals" {
+  type = set(string)
 }

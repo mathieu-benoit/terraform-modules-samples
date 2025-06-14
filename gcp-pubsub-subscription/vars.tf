@@ -14,6 +14,6 @@ variable "res_id" {
 variable "project_id" {
   type = string
 }
-variable "region" {
+variable "topic_name" {
   type = string
 }
