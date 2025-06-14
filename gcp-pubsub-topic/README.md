@@ -31,6 +31,5 @@
 
 | Name | Description |
 |------|-------------|
-| id | n/a |
 | name | n/a |
 <!-- END_TF_DOCS -->
