@@ -2,19 +2,19 @@
 <!-- BEGIN_TF_DOCS -->
 
 
-### Providers
+## Providers
 
 | Name | Version |
 |------|---------|
 | google | n/a |
 
-### Resources
+## Resources
 
 | Name | Type |
 |------|------|
 | [google_redis_instance.instance](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/redis_instance) | data source |
 
-### Inputs
+## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -23,7 +23,7 @@
 | redis\_instance | n/a | `string` | n/a | yes |
 | region | n/a | `string` | n/a | yes |
 
-### Outputs
+## Outputs
 
 | Name | Description |
 |------|-------------|

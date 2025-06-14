@@ -1,0 +1,6 @@
+access_token    = ""
+app_id          = ""
+env_id          = ""
+gcs_bucket_name = ""
+principals      = ""
+res_id          = ""

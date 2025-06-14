@@ -2,19 +2,19 @@
 <!-- BEGIN_TF_DOCS -->
 
 
-### Providers
+## Providers
 
 | Name | Version |
 |------|---------|
 | google | n/a |
 
-### Resources
+## Resources
 
 | Name | Type |
 |------|------|
 | [google_apphub_application.apphub_app](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_application) | resource |
 
-### Inputs
+## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|

@@ -2,19 +2,19 @@
 <!-- BEGIN_TF_DOCS -->
 
 
-### Providers
+## Providers
 
 | Name | Version |
 |------|---------|
 | google | n/a |
 
-### Resources
+## Resources
 
 | Name | Type |
 |------|------|
 | [google_project_service.aiplatform](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_service) | resource |
 
-### Inputs
+## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -25,7 +25,7 @@
 | project\_id | n/a | `string` | n/a | yes |
 | res\_id | n/a | `string` | n/a | yes |
 
-### Outputs
+## Outputs
 
 | Name | Description |
 |------|-------------|

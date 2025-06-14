@@ -3,13 +3,13 @@
 <!-- BEGIN_TF_DOCS -->
 
 
-### Inputs
+## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | input | n/a | `string` | n/a | yes |
 
-### Outputs
+## Outputs
 
 | Name | Description |
 |------|-------------|

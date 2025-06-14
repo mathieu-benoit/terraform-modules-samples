@@ -2,21 +2,21 @@
 <!-- BEGIN_TF_DOCS -->
 
 
-### Providers
+## Providers
 
 | Name | Version |
 |------|---------|
 | google | n/a |
 | random | n/a |
 
-### Resources
+## Resources
 
 | Name | Type |
 |------|------|
 | [google_storage_bucket.bucket](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket) | resource |
 | [random_string.bucket_name](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 
-### Inputs
+## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -27,7 +27,7 @@
 | region | n/a | `string` | n/a | yes |
 | res\_id | n/a | `string` | n/a | yes |
 
-### Outputs
+## Outputs
 
 | Name | Description |
 |------|-------------|

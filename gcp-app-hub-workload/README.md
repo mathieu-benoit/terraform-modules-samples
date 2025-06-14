@@ -2,13 +2,13 @@
 <!-- BEGIN_TF_DOCS -->
 
 
-### Providers
+## Providers
 
 | Name | Version |
 |------|---------|
 | google | n/a |
 
-### Resources
+## Resources
 
 | Name | Type |
 |------|------|
@@ -18,7 +18,7 @@
 | [google_apphub_discovered_service.apphub_service](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_service) | data source |
 | [google_apphub_discovered_workload.apphub_workload](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_workload) | data source |
 
-### Inputs
+## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|

@@ -1,0 +1,11 @@
+access_token       = ""
+app_id             = ""
+create_service     = true
+env_id             = ""
+env_type           = ""
+gke_name           = ""
+gke_project_number = ""
+namespace          = ""
+project_id         = ""
+region             = ""
+res_id             = ""

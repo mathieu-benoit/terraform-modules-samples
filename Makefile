@@ -1,18 +1,18 @@
 TF_DIRS = $(patsubst %/main.tf, %, $(shell find . -type d -name .terraform -prune -o -name 'main.tf' -print))
 VALIDATE_TF_DIRS = $(addprefix validate-,$(TF_DIRS))
+LINT_TF_DIRS = $(addprefix lint-,$(TF_DIRS))
+DOCS_TF_DIRS = $(addprefix docs-,$(TF_DIRS))
+
+# Generate docs for a terraform directories
+$(DOCS_TF_DIRS): docs-%:
+	@echo "Docs $*"
+	terraform-docs --config .terraform-docs.yaml $*
+	terraform-docs --config .terraform-docs-example.yaml $*
 
 # Generate docs
 .PHONY: docs
-docs:
-	terraform-docs --config docs/.terraform-docs.yaml ./echo
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-gcs
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-gcs-iam
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-vertex-ai
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-vertex-ai-iam
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-memorystore-redis
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-memorystore-redis-existing
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-app-hub-app
-	terraform-docs --config docs/.terraform-docs.yaml ./gcp-app-hub-workload
+docs: $(DOCS_TF_DIRS)
+	@echo "All docs generated"
 
 # Format all terraform files
 fmt:

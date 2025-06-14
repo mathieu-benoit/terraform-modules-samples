@@ -2,14 +2,14 @@
 <!-- BEGIN_TF_DOCS -->
 
 
-### Providers
+## Providers
 
 | Name | Version |
 |------|---------|
 | google | n/a |
 | random | n/a |
 
-### Resources
+## Resources
 
 | Name | Type |
 |------|------|
@@ -17,7 +17,7 @@
 | [random_string.memorystore_instance_name](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [google_compute_network.vpc](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/compute_network) | data source |
 
-### Inputs
+## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -30,7 +30,7 @@
 | network | n/a | `string` | `"default"` | no |
 | redis\_version | n/a | `string` | `"REDIS_7_2"` | no |
 
-### Outputs
+## Outputs
 
 | Name | Description |
 |------|-------------|
