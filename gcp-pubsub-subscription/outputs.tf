@@ -3,5 +3,5 @@ output "name" {
 }
 
 output "topic" {
-  value = var.topic_name
+  value = var.topic
 }

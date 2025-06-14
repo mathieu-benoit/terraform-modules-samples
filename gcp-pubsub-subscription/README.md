@@ -25,7 +25,7 @@
 | env\_id | n/a | `string` | n/a | yes |
 | project\_id | n/a | `string` | n/a | yes |
 | res\_id | n/a | `string` | n/a | yes |
-| topic\_name | n/a | `string` | n/a | yes |
+| topic | n/a | `string` | n/a | yes |
 
 ## Outputs
 

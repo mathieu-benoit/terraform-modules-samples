@@ -7,6 +7,6 @@ resource "random_string" "subscription_name" {
 
 resource "google_pubsub_subscription" "main" {
   name  = random_string.subscription_name.result
-  topic = var.topic_name
+  topic = var.topic
 }
         
