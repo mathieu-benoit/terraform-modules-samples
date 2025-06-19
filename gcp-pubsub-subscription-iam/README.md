@@ -22,6 +22,7 @@
 | app\_id | n/a | `string` | n/a | yes |
 | env\_id | n/a | `string` | n/a | yes |
 | principals | n/a | `set(string)` | n/a | yes |
+| project\_id | n/a | `string` | n/a | yes |
 | res\_id | n/a | `string` | n/a | yes |
 | subscription\_name | n/a | `string` | n/a | yes |
 <!-- END_TF_DOCS -->

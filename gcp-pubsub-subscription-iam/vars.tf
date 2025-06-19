@@ -11,6 +11,9 @@ variable "env_id" {
 variable "res_id" {
   type = string
 }
+variable "project_id" {
+  type = string
+}
 variable "subscription_name" {
   type = string
 }
