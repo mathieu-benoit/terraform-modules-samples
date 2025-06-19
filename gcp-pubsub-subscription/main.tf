@@ -10,4 +10,4 @@ resource "google_pubsub_subscription" "main" {
   name    = random_string.subscription_name.result
   topic   = var.topic
 }
-        
+
