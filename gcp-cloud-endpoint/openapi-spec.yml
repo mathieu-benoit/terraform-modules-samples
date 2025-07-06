@@ -1,0 +1,10 @@
+swagger: "2.0"
+info:
+  description: "${TITLE}"
+  title: "${TITLE}"
+  version: "1.0.0"
+paths: {}
+host: "${DNS}"
+x-google-endpoints:
+- name: "${DNS}"
+  target: "${IP_ADDRESS}"

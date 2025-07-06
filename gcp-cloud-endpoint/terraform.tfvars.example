@@ -1,0 +1,9 @@
+access_token = ""
+app_id       = ""
+env_id       = ""
+
+# The IP address of the Cloud Endpoint.
+ip_address = ""
+
+project_id = ""
+res_id     = ""
