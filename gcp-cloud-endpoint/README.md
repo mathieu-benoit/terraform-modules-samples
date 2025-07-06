@@ -6,6 +6,7 @@
 | Name | Version |
 |------|---------|
 | google | n/a |
+| random | n/a |
 | template | n/a |
 
 ## Resources
@@ -13,6 +14,7 @@
 | Name | Type |
 |------|------|
 | [google_endpoints_service.api_service](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/endpoints_service) | resource |
+| [random_string.suffix](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [template_file.openapi_spec](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
 
 ## Inputs

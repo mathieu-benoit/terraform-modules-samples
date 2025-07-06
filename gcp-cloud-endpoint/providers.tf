@@ -7,6 +7,10 @@ terraform {
     template = {
       source = "hashicorp/template"
     }
+
+    random = {
+      source = "hashicorp/random"
+    }
   }
 }
 
