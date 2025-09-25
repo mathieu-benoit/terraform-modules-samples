@@ -24,4 +24,10 @@
 | env\_type | n/a | `string` | n/a | yes |
 | project\_id | n/a | `string` | n/a | yes |
 | region | n/a | `string` | n/a | yes |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| url | n/a |
 <!-- END_TF_DOCS -->
