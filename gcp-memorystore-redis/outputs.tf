@@ -15,3 +15,7 @@ output "password" {
   value     = google_redis_instance.memorystore.auth_string
   sensitive = true
 }
+
+output "url" {
+  value = "https://console.cloud.google.com/memorystore/redis/locations/${var.region}/instances/${google_redis_instance.memorystore.name}/details/overview?project=${var.project_id}"
+}

@@ -37,5 +37,6 @@
 | host | n/a |
 | password | n/a |
 | port | n/a |
+| url | n/a |
 | username | n/a |
 <!-- END_TF_DOCS -->
