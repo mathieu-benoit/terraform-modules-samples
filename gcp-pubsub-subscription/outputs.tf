@@ -7,5 +7,5 @@ output "topic" {
 }
 
 output "url" {
-  value = "https://console.cloud.google.com/cloudpubsub/subscription/detail/${google_pubsub_topic.main.name}?project=${var.project_id}"
+  value = "https://console.cloud.google.com/cloudpubsub/subscription/detail/${google_pubsub_subscription.main.name}?project=${var.project_id}"
 }
