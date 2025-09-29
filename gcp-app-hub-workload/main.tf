@@ -13,10 +13,18 @@ data "google_apphub_application" "apphub_app" {
   location       = var.region
 }
 
+resource "time_sleep" "wait" {
+  depends_on = [data.google_apphub_application.apphub_app]
+
+  create_duration = "5s"
+}
+
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_workload
 data "google_apphub_discovered_workload" "apphub_workload" {
   location     = var.region
   workload_uri = local.workload_uri
+
+  depends_on = [time_sleep.wait]
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_workload
@@ -31,11 +39,14 @@ resource "google_apphub_workload" "apphub_workload" {
     }
   }
 }
+
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_service
 data "google_apphub_discovered_service" "apphub_service" {
   count       = var.create_service ? 1 : 0
   location    = var.region
   service_uri = local.service_uri
+
+  depends_on = [google_apphub_workload.apphub_workload]
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_service
@@ -50,4 +61,5 @@ resource "google_apphub_service" "apphub_service" {
       type = upper(var.env_type)
     }
   }
+
 }
