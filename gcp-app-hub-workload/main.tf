@@ -16,7 +16,7 @@ data "google_apphub_application" "apphub_app" {
 resource "time_sleep" "wait" {
   depends_on = [data.google_apphub_application.apphub_app]
 
-  create_duration = "5s"
+  create_duration = "45s"
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_workload
