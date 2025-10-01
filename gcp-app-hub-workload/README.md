@@ -7,7 +7,6 @@
 | Name | Version |
 |------|---------|
 | google | n/a |
-| time | n/a |
 
 ## Resources
 
@@ -15,7 +14,6 @@
 |------|------|
 | [google_apphub_service.apphub_service](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_service) | resource |
 | [google_apphub_workload.apphub_workload](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_workload) | resource |
-| [time_sleep.wait](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/sleep) | resource |
 | [google_apphub_application.apphub_app](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_application) | data source |
 | [google_apphub_discovered_service.apphub_service](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_service) | data source |
 | [google_apphub_discovered_workload.apphub_workload](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_workload) | data source |
