@@ -13,18 +13,10 @@ data "google_apphub_application" "apphub_app" {
   location       = var.region
 }
 
-resource "time_sleep" "wait" {
-  depends_on = [data.google_apphub_application.apphub_app]
-
-  create_duration = "45s"
-}
-
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/apphub_discovered_workload
 data "google_apphub_discovered_workload" "apphub_workload" {
   location     = var.region
   workload_uri = local.workload_uri
-
-  depends_on = [time_sleep.wait]
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apphub_workload
@@ -61,5 +53,4 @@ resource "google_apphub_service" "apphub_service" {
       type = upper(var.env_type)
     }
   }
-
 }
