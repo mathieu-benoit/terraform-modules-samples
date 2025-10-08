@@ -33,4 +33,10 @@
 | region | n/a | `string` | n/a | yes |
 | res\_id | n/a | `string` | n/a | yes |
 | create\_service | n/a | `bool` | `true` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| url | n/a |
 <!-- END_TF_DOCS -->
